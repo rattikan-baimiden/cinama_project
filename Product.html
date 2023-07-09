@@ -13,231 +13,71 @@
     height: 200px;
     background: #aaa;
   }
+  ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            align-items: end;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            
+        }
+        h1 {
+            color: white;
+        }
+
+            /* Change the link color to #111 (black) on hover */
+        li a :hover {
+            color: red;
+        }
   </style>
 </head>
 <body>
-
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>    
+    <ul style="background-color: black;"> 
+        <a>Movie</a>             
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Product.html">Shop</a></li>
+        <li><a href="favorite.html">Favorite</a></li>
+        <li ><a class="active" href="contact.html">Contact</a></li>
     </ul>
-  </div>  
-</nav>
 
-<div class="album py-5 bg-light" style="background-image: url('https://media.istockphoto.com/id/1363717602/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AA%E0%B8%B5%E0%B9%81%E0%B8%94%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B9%8D%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%A5%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%9C%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%A5%E0%B8%AB%E0%B8%B0%E0%B8%99%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99.jpg?b=1&s=612x612&w=0&k=20&c=F9pmBZRQtT0hTSdznNtzgOja5UteIA_RxNg8w6i3dag=');">
-    <div class="container">
-        <h3 style="color: #aaa; font-size: 35px; margin-bottom: 35px;">Product Movie</h3>
+    <div class="album py-5 bg-light" style="background-image: url('https://media.istockphoto.com/id/1363717602/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AA%E0%B8%B5%E0%B9%81%E0%B8%94%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B9%8D%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%A5%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%9C%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%A5%E0%B8%AB%E0%B8%B0%E0%B8%99%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99.jpg?b=1&s=612x612&w=0&k=20&c=F9pmBZRQtT0hTSdznNtzgOja5UteIA_RxNg8w6i3dag=');">
+        <div class="container">
+            <h3 style="color: #aaa; font-size: 35px; margin-bottom: 35px;">Product Movie</h3>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-        <div class="col">
-            <div class="card shadow-sm">
-                  <img src="https://dl.lnwfile.com/_/dl/_raw/ep/2a/cj.jpg"style="width:109.5%"/>
-  
-              <div class="card-body">
-                <p class="card-text">ชื่อสินค้า: พัดเสริมโชค Limited Edition</p>
-                <p class="card-text">ราคา: 159 </p>
-                <div class="d-flex justify-content-between align-items-center">
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="https://cf.shopee.co.th/file/c6fdc84796fc6bc4998a27386ca04a9d"/>
-  
-              <div class="card-body">
-                  <p class="card-text">ชื่อสินค้า: ถ้วยซีเรียลเอนกประสงค์ BB-8 จากภาพยนตร์ Star Wars</p>
-                  <p class="card-text">ราคา: 450</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="https://cf.shopee.co.th/file/4cc1405557c76c800a07acfc82809541"/>
-  
-              <div class="card-body">
-                  <p class="card-text">ชื่อสินค้า: ชุดถ้วยอาหารเช้าซีเรียลมินเนี่ยนจากภาพยนตร์ Despicable Me 3</p>
-                  <p class="card-text">ราคา: 550</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-              <div class="card shadow-sm " >
-                <img src="https://f.ptcdn.info/718/063/000/pqpewi2vzqn03SRv1vA8-o.jpg" style="width:93%"/>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://dl.lnwfile.com/_/dl/_raw/ep/2a/cj.jpg"style="width:109.5%"/>
     
                 <div class="card-body">
-                    <p class="card-text">ชื่อสินค้า: ของพรีเมี่ยมจากภาพยนตร์ ทรานฟอร์เมอร์ อเวนเจอร์ สตาร์วอร์ ไอรอนแมน วันเดอร์วูเมน</p>
-                    <p class="card-text">ราคา: 600</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                  <img src="https://cartoon.mthai.com/app/uploads/2018/04/DbRZjdIVMAAxvdr.jpg"/>
-      
-                  <div class="card-body">
-                      <p class="card-text">ชื่อสินค้า: Avengers Infinity War แก้วน้ำโรงหนังทีมฮีโร่ 3 สไตล์ 3 ประเทศ </p>
-                      <p class="card-text">ราคา: 250</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="https://img.salehere.co.th/p/1200x0/2023/05/31/d3uesqng9t8b.jpg" style="width:100%"/>
-
-                    <div class="card-body">
-                        <p class="card-text">ชื่อสินค้า: แก้ว&บัคเก็ตไอ้แมงมุม Major Cineplex  </p>
-                        <p class="card-text">ราคา: 350</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                  <img src="https://ae01.alicdn.com/kf/S01ab2c1a40e94f619c65c4a0d9084413z/Disney-Kawaii-Stitch-Angel-300Ml.jpg"/>
-      
-                  <div class="card-body">
-                      <p class="card-text">ชื่อสินค้า: Disney ถ้วย Kawaii อะนิเมะ Stitch Angel 300Ml </p>
-                      <p class="card-text">ราคา: 420</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="https://cbu01.alicdn.com/img/ibank/2016/435/867/3476768534_1183766709.jpg"/>
-      
-                  <div class="card-body">
-                      <p class="card-text">ชื่อสินค้า: สวมหน้ากากนินจาถ้วยนวัตกรรมถ้วยกาแฟสร้างสรรค์ชุดถ้วยภาพยนตร์อะนิเมะการ์ตูน</p>
-                      <p class="card-text">ราคา: 360</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
-              </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                            <img src="https://ae01.alicdn.com/kf/H9718469dcc00477dba7e73c6042434f84.jpg_640x640Q90.jpg_.webp"/>
-            
-                        <div class="card-body">
-                        <p class="card-text">ชื่อสินค้า: ถ้วยรางวัลคริสตัลทำจากถ้วยเป็นรางวัลคริสตัลรางวัลกีฬาภาพยนตร์รางวัล Dropshipping </p>
-                        <p class="card-text">ราคา: 360</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="https://ae01.alicdn.com/kf/H66e4982fa9e6486dae24f6000c8cf9aah/T-Meme-Humor.jpg_Q90.jpg_.webp"/>
-            
-                        <div class="card-body">
-                            <p class="card-text">ชื่อสินค้า: T นกจากจาระบีเซรามิคถ้วยกาแฟชานมแก้วภาพยนตร์ฟิล์มตลก Meme Humor ล้อเลียนตลก Tbirds Tbird T นก</p>
-                            <p class="card-text">ราคา: 330</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                    <img src="https://cdn.s7.shopdisney.asia/is/image/DisneyStoreES/465033952182?fmt=webp&qlt=70&wid=652&hei=652"/>
-        
-                    <div class="card-body">
-                        <p class="card-text">ชื่อสินค้า: The Little Mermaid ''My Voice Is a Treasure'' </p>
-                        <p class="card-text">ราคา: 200</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                        </div>
-                    </div>
-                    </div>
-                </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="https://cbu01.alicdn.com/img/ibank/2017/794/318/3994813497_115397266.jpg"/>
-      
-                  <div class="card-body">
-                      <p class="card-text">ชื่อสินค้า: แอนิเมชั่น Gaowa Creative Cartoon Mark Wine Cup Iron Cup Cup</p>
-                      <p class="card-text">ราคา: 300</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="https://4.bp.blogspot.com/-KawaRg8y2pI/WvU9ktgHrRI/AAAAAAAAFTM/f0oJ_PrffIgRr0EopKaifXK_yRMYxol3ACEwYBhgL/s1600/20180511_133454-1.jpg"/>
-
-                    <div class="card-body">
-                    <p class="card-text">ชื่อสินค้า: แก้วน้ำสะสมชุด Ironman 3 </p>
-                    <p class="card-text">ราคา: 300</p>
+                    <p class="card-text">ชื่อสินค้า: พัดเสริมโชค Limited Edition</p>
+                    <p class="card-text">ราคา: 159 </p>
                     <div class="d-flex justify-content-between align-items-center">
                     
                     </div>
-                    </div>
-                </div>
-            </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                      <img src="https://1.bp.blogspot.com/-NZOdiQWFEMU/XcpCyMUfuoI/AAAAAAAAJUA/HeaerDH4Y6Ifa5jXMkiiao0QOAqhEbUkQCEwYBhgL/s1600/20191112_102257-1-1.jpg"/>
-          
-                      <div class="card-body">
-                          <p class="card-text">ชื่อสินค้า: ขายแก้วน้ำโรงหนัง และของสะสม: แก้วน้ำโรงหนัง เรื่อง กับตันอเมริกา</p>
-                          <p class="card-text">ราคา: 520 </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-           
-        
-            <div class="col">
-            <div class="card shadow-sm">
-                <img src="https://2.bp.blogspot.com/-wOtEqLNIbQc/XHx7yL00R_I/AAAAAAAAIKw/b0wwLzi98X8nRoJp_zdaysH2ean_Ue4OgCLcBGAs/s1600/20190303_162141-1.jpg"/>
-
-                <div class="card-body">
-                    <p class="card-text">ชื่อสินค้า:  แก้วน้ำสะสมชุด Ironman 2 </p>
-                    <p class="card-text">ราคา: 350</p>
-                    <div class="d-flex justify-content-between align-items-center">
                 </div>
                 </div>
             </div>
-            </div>
+            
             <div class="col">
                 <div class="card shadow-sm">
-                <img src="https://ravipa.com/cdn/shop/files/TheLittleMermaid_Necklace-01_3000x.jpg?v=1683604151"/>
-
+                <img src="https://cf.shopee.co.th/file/c6fdc84796fc6bc4998a27386ca04a9d"/>
+    
                 <div class="card-body">
-                    <p class="card-text">ชื่อสินค้า: The Little Mermaid Silver Ariel & Flounder Necklace </p>
-                    <p class="card-text">ราคา: 950</p>
+                    <p class="card-text">ชื่อสินค้า: ถ้วยซีเรียลเอนกประสงค์ BB-8 จากภาพยนตร์ Star Wars</p>
+                    <p class="card-text">ราคา: 450</p>
                     <div class="d-flex justify-content-between align-items-center">
                     </div>
                 </div>
@@ -245,24 +85,36 @@
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="https://f.ptcdn.info/838/046/000/ofnoaaxvgyj2096lDXb-o.jpg"/>
-        
-                    <div class="card-body">
-                        <p class="card-text">ชื่อสินค้า: รีวิวชุดแก้วน้ำจากโรงภาพยนตร์จากเรื่อง Doctor Strange</p>
-                        <p class="card-text">ราคา: 260</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                <img src="https://cf.shopee.co.th/file/4cc1405557c76c800a07acfc82809541"/>
+    
+                <div class="card-body">
+                    <p class="card-text">ชื่อสินค้า: ชุดถ้วยอาหารเช้าซีเรียลมินเนี่ยนจากภาพยนตร์ Despicable Me 3</p>
+                    <p class="card-text">ราคา: 550</p>
+                    <div class="d-flex justify-content-between align-items-center">
                     </div>
-                    </div>
+                </div>
                 </div>
             </div>
-        
-                <div class="col">
-                    <div class="card shadow-sm">
-                    <img src="https://f.ptcdn.info/546/016/000/1394443668-posterteac-o.jpg"/>
+    
+            <div class="col">
+                <div class="card shadow-sm " >
+                    <img src="https://f.ptcdn.info/718/063/000/pqpewi2vzqn03SRv1vA8-o.jpg" style="width:93%"/>
         
                     <div class="card-body">
-                        <p class="card-text">ชื่อสินค้า: เสื้อยืดที่ระลึกจากภาพยนตร์เรื่อง คิดถึงวิทยา   </p>
-                        <p class="card-text">ราคา: 150</p>
+                        <p class="card-text">ชื่อสินค้า: ของพรีเมี่ยมจากภาพยนตร์ ทรานฟอร์เมอร์ อเวนเจอร์ สตาร์วอร์ ไอรอนแมน วันเดอร์วูเมน</p>
+                        <p class="card-text">ราคา: 600</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src="https://cartoon.mthai.com/app/uploads/2018/04/DbRZjdIVMAAxvdr.jpg"/>
+        
+                    <div class="card-body">
+                        <p class="card-text">ชื่อสินค้า: Avengers Infinity War แก้วน้ำโรงหนังทีมฮีโร่ 3 สไตล์ 3 ประเทศ </p>
+                        <p class="card-text">ราคา: 250</p>
                         <div class="d-flex justify-content-between align-items-center">
                         </div>
                     </div>
@@ -270,38 +122,200 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                          <img src="https://inwfile.com/s-cl/moe0ho.jpg"/>
-          
-                      <div class="card-body">
-                        <p class="card-text">ชื่อสินค้า: แผ่นรองแก้วจากภาพยนตร์เรื่อง S.W.A.T</p>
-                        <p class="card-text">ราคา: 300</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                         
+                        <img src="https://img.salehere.co.th/p/1200x0/2023/05/31/d3uesqng9t8b.jpg" style="width:100%"/>
+
+                        <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: แก้ว&บัคเก็ตไอ้แมงมุม Major Cineplex  </p>
+                            <p class="card-text">ราคา: 350</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col">
+                </div>
+                <div class="col">
                     <div class="card shadow-sm">
-                    <img src="https://cf.shopee.co.th/file/2bec135e4e3586910dd8ec204752a885"/>
+                    <img src="https://ae01.alicdn.com/kf/S01ab2c1a40e94f619c65c4a0d9084413z/Disney-Kawaii-Stitch-Angel-300Ml.jpg"/>
         
                     <div class="card-body">
-                        <p class="card-text">ชื่อสินค้า: One Piece major</p>
+                        <p class="card-text">ชื่อสินค้า: Disney ถ้วย Kawaii อะนิเมะ Stitch Angel 300Ml </p>
                         <p class="card-text">ราคา: 420</p>
                         <div class="d-flex justify-content-between align-items-center">
                         </div>
                     </div>
                     </div>
                 </div>
-            </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src="https://cbu01.alicdn.com/img/ibank/2016/435/867/3476768534_1183766709.jpg"/>
+        
+                    <div class="card-body">
+                        <p class="card-text">ชื่อสินค้า: สวมหน้ากากนินจาถ้วยนวัตกรรมถ้วยกาแฟสร้างสรรค์ชุดถ้วยภาพยนตร์อะนิเมะการ์ตูน</p>
+                        <p class="card-text">ราคา: 360</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                                <img src="https://ae01.alicdn.com/kf/H9718469dcc00477dba7e73c6042434f84.jpg_640x640Q90.jpg_.webp"/>
+                
+                            <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: ถ้วยรางวัลคริสตัลทำจากถ้วยเป็นรางวัลคริสตัลรางวัลกีฬาภาพยนตร์รางวัล Dropshipping </p>
+                            <p class="card-text">ราคา: 360</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://ae01.alicdn.com/kf/H66e4982fa9e6486dae24f6000c8cf9aah/T-Meme-Humor.jpg_Q90.jpg_.webp"/>
+                
+                            <div class="card-body">
+                                <p class="card-text">ชื่อสินค้า: T นกจากจาระบีเซรามิคถ้วยกาแฟชานมแก้วภาพยนตร์ฟิล์มตลก Meme Humor ล้อเลียนตลก Tbirds Tbird T นก</p>
+                                <p class="card-text">ราคา: 330</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        <img src="https://cdn.s7.shopdisney.asia/is/image/DisneyStoreES/465033952182?fmt=webp&qlt=70&wid=652&hei=652"/>
             
-      </div>
-    </div>
-  </div>
+                        <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: The Little Mermaid ''My Voice Is a Treasure'' </p>
+                            <p class="card-text">ราคา: 200</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src="https://cbu01.alicdn.com/img/ibank/2017/794/318/3994813497_115397266.jpg"/>
+        
+                    <div class="card-body">
+                        <p class="card-text">ชื่อสินค้า: แอนิเมชั่น Gaowa Creative Cartoon Mark Wine Cup Iron Cup Cup</p>
+                        <p class="card-text">ราคา: 300</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://4.bp.blogspot.com/-KawaRg8y2pI/WvU9ktgHrRI/AAAAAAAAFTM/f0oJ_PrffIgRr0EopKaifXK_yRMYxol3ACEwYBhgL/s1600/20180511_133454-1.jpg"/>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
+                        <div class="card-body">
+                        <p class="card-text">ชื่อสินค้า: แก้วน้ำสะสมชุด Ironman 3 </p>
+                        <p class="card-text">ราคา: 300</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        <img src="https://1.bp.blogspot.com/-NZOdiQWFEMU/XcpCyMUfuoI/AAAAAAAAJUA/HeaerDH4Y6Ifa5jXMkiiao0QOAqhEbUkQCEwYBhgL/s1600/20191112_102257-1-1.jpg"/>
+            
+                        <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: ขายแก้วน้ำโรงหนัง และของสะสม: แก้วน้ำโรงหนัง เรื่อง กับตันอเมริกา</p>
+                            <p class="card-text">ราคา: 520 </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            
+            
+                <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://2.bp.blogspot.com/-wOtEqLNIbQc/XHx7yL00R_I/AAAAAAAAIKw/b0wwLzi98X8nRoJp_zdaysH2ean_Ue4OgCLcBGAs/s1600/20190303_162141-1.jpg"/>
+
+                    <div class="card-body">
+                        <p class="card-text">ชื่อสินค้า:  แก้วน้ำสะสมชุด Ironman 2 </p>
+                        <p class="card-text">ราคา: 350</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src="https://ravipa.com/cdn/shop/files/TheLittleMermaid_Necklace-01_3000x.jpg?v=1683604151"/>
+
+                    <div class="card-body">
+                        <p class="card-text">ชื่อสินค้า: The Little Mermaid Silver Ariel & Flounder Necklace </p>
+                        <p class="card-text">ราคา: 950</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://f.ptcdn.info/838/046/000/ofnoaaxvgyj2096lDXb-o.jpg"/>
+            
+                        <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: รีวิวชุดแก้วน้ำจากโรงภาพยนตร์จากเรื่อง Doctor Strange</p>
+                            <p class="card-text">ราคา: 260</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        <img src="https://f.ptcdn.info/546/016/000/1394443668-posterteac-o.jpg"/>
+            
+                        <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: เสื้อยืดที่ระลึกจากภาพยนตร์เรื่อง คิดถึงวิทยา   </p>
+                            <p class="card-text">ราคา: 150</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://inwfile.com/s-cl/moe0ho.jpg"/>
+            
+                        <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: แผ่นรองแก้วจากภาพยนตร์เรื่อง S.W.A.T</p>
+                            <p class="card-text">ราคา: 300</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        <img src="https://cf.shopee.co.th/file/2bec135e4e3586910dd8ec204752a885"/>
+            
+                        <div class="card-body">
+                            <p class="card-text">ชื่อสินค้า: One Piece major</p>
+                            <p class="card-text">ราคา: 420</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer</p>
+    </div>
 
 </body>
 </html>
