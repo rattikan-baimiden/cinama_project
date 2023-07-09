@@ -1,14 +1,155 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Cinema Project1</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="album py-5 bg-light" style="background-image: url('https://media.istockphoto.com/id/1363717602/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AA%E0%B8%B5%E0%B9%81%E0%B8%94%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B9%8D%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%A5%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%9C%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%A5%E0%B8%AB%E0%B8%B0%E0%B8%99%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99.jpg?b=1&s=612x612&w=0&k=20&c=F9pmBZRQtT0hTSdznNtzgOja5UteIA_RxNg8w6i3dag=');">
+        <div class="container">
+
+            <h3 style="color: #aaa; font-size: 35px; margin-bottom: 35px;">Favorite Movie</h3>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg style="margin-top: -150px;">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYzZkOGUwMzMtMTgyNS00YjFlLTg5NzYtZTE3Y2E5YTA5NWIyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg"
+                                alt="Avatar" style="width:100%">
+                        </svg>
+
+                        <div class="card-body">
+                            <div style="text-align: center;">
+                                <b class="card-text">Black Adam</b>
+                            </div>
+                            <div style="font-size: 14px;margin-top: 10px;">
+                                <p>type : Action</p>
+                                <p style="margin-top: -10px;">IMAX 3D</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="projects.html">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    </a>
+                                </div>
+                                <i class="fa fa-heart" style="font-size:30px;color:red;margin-left: 50px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg style="margin-top: -150px;">
+                            <img src="https://image.tmdb.org/t/p/original/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg"
+                                alt="Avatar" style="width:100%">
+                        </svg>
+                
+                        <div class="card-body">
+                            <div style="text-align: center;">
+                                <b class="card-text">Morbius</b>
+                            </div>
+                            <div style="font-size: 14px;margin-top: 10px;">
+                                <p>type : Action</p>
+                                <p style="margin-top: -10px;">Digital Cinema</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="projects.html">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                </a>
+                                <i class="fa fa-heart" style="font-size:30px;color:red;margin-left: 50px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg style="margin-top: -150px;">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMzVlMmY2NTctODgwOC00NDMzLWEzMWYtM2RiYmIyNTNhMTI0XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_.jpg"
+                                alt="Avatar" style="width:100%">
+                        </svg>
+                
+                        <div class="card-body">
+                            <div style="text-align: center;">
+                                <b class="card-text">The Northman</b>
+                            </div>
+                            <div style="font-size: 14px;margin-top: 10px;">
+                                <p>type : Action</p>
+                                <p style="margin-top: -10px;">Digital Cinema</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="projects.html">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                </a>
+                                <i class="fa fa-heart" style="font-size:30px;color:red;margin-left: 50px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg style="margin-top: -150px;">
+                            <img src="https://www.innnews.co.th/wp-content/uploads/2022/07/TH_Netflix_Carter-691x1024.jpg"
+                                alt="Avatar" style="width:100%">
+                        </svg>
+                
+                        <div class="card-body">
+                            <div style="text-align: center;">
+                                <b class="card-text">คาร์เตอร์ | Carter</b>
+                            </div>
+                            
+                            <div style="font-size: 14px;margin-top: 10px;">
+                                <p>type : Action</p>
+                                <p style="margin-top: -10px;">Real D 3D</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="projects.html">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                </a>
+                                <i class="fa fa-heart" style="font-size:30px;color:red;margin-left: 50px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
