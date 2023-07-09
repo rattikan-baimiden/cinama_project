@@ -1,2 +1,2 @@
-# cinama_project
-cinama_project
+# cinema_project
+cinema_project
